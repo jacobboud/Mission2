@@ -12,12 +12,14 @@ namespace Mission2
 
         public static int[] diceRolls(int numRolls)
         {
+            // Initialize variables
             int[] diceRollsCount = new int[11];
             Random random = new Random();
             int die1 = 0;
             int die2 = 0;
             int value = 0;
 
+            // Simulate two dice rolls, add them together, then add one to that number's index
             for (int i = 0; i < numRolls; i++)
             {
                 die1 = random.Next(1, 7);
